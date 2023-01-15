@@ -4,7 +4,6 @@ import './App.css';
 import Terminal from 'react-animated-term'
 import 'react-animated-term/dist/react-animated-term.css'
 
-
 const termLines = [
   {
     'text': 'whoami',
