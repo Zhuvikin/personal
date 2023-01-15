@@ -26,3 +26,9 @@ jobs:
       run: |
         npm install
         npm run build
+        
+    - name: Deploy GitHub Pages site
+      uses: actions/deploy-pages@v1.2.3
+      with:
+        token: ${{ github.token }}
+        artifact_name: build
