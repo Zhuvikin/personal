@@ -28,10 +28,9 @@ jobs:
         npm run build
         
     - name: Upload a Build Artifact
-      uses: actions/upload-artifact@v3.1.2
+      uses: actions/upload-pages-artifact@v1.0.7
       with:
-        name: build
-        path: build
+        path: gh-pages/
                
   deploy:
     needs: build
@@ -52,4 +51,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1
         with:
-          artifact_name: build
+          artifact_name: github-pages
