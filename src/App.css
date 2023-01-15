@@ -2,9 +2,9 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -34,5 +34,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.Terminal-window {
+  box-shadow: none !important;
+}
+
+.Terminal-btn {
+  display: none !important;
+}
+
+.terminal-wrapper {
+  width: 500px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .terminal-wrapper {
+    width: 100%;
   }
 }
